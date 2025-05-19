@@ -54,7 +54,6 @@ nav{
     left:0;
     right: 0;
     font-family: 'Rubik', sans-serif;
-    
 }
 
 .nav-links{
@@ -69,26 +68,25 @@ nav{
     color: #ffffff; 
     margin-top: 20px;  
     font-family: 'Rubik', sans-serif;
-    flex-wrap: wrap;
 }
     /* style logo */
 
 .slick-logo{
- /* margin-left: 70px; */
+ margin-left: 70px;
 }
-/* .nav-items7{
+.nav-items7{
     position: relative;
     left: 3px;
-} */
-/* .nav-items8{
+}
+.nav-items8{
     position: relative;
     left: 0px;
-} */
-/* .nav-items2{
+}
+.nav-items2{
     position: relative;
     right: 8px;
-} */
-/* .nav-items1{
+}
+.nav-items1{
     position: relative;
     right: 10px;
 }
@@ -99,15 +97,15 @@ nav{
 .nav-items4{
     position: relative;
     right: 17px;
-} */
-/* .nav-items5{
+}
+.nav-items5{
     position: relative;
     right: 23px;
 }
 .nav-items6{
     position: relative;
     right: 26px;
-} */
+}
 .menu .download-button{
     background: #7fc9fb;
     text-align: center;
@@ -403,7 +401,7 @@ transition: all .4s ease;
 .services-container{
     background: #f9f9f9;
     width: 100%;
-    height: 150%;
+    height: 140%;
     overflow: hidden;
  }
 .service-container1{
@@ -433,8 +431,7 @@ transition: all .4s ease;
     width: 1170px;
     margin-top: -100px;
     margin-left: 6%;
-
-    /* margin-bottom: 222px; */
+    /* margin-bottom: 122px; */
  }
  .serives-contaner1{
      background: white;
@@ -1730,7 +1727,7 @@ transition: all .4s ease;
             overflow-wrap:normal;
             margin-top: 90px;
             width: 100%;
-            height: 86%;
+            height: 80%;
            
          }
          .slick-link{
@@ -1792,7 +1789,6 @@ transition: all .4s ease;
             height: 40px;
             margin-top: 18px;
             position: relative;
-            margin-bottom: 52px;
             
          }
          .Subscribe-area input{
@@ -1826,7 +1822,7 @@ transition: all .4s ease;
          }
          
           .line{
-            border:1px solid #3c1f6eb3;
+            border:1px solid #3c1f6e;
             width: 2000%;
             margin-right: 500px;
             margin-left: -393px;
@@ -1876,3 +1872,96 @@ transition: all .4s ease;
             overflow: hidden;
          }
          
+
+/* Responsive Navbar */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #5533ff;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    z-index: 999;
+  }
+
+  .nav-links.nav-open {
+    display: flex;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .slick-logo {
+    margin-left: 20px;
+  }
+
+  nav {
+    justify-content: space-between;
+    padding: 15px 20px;
+  }
+}
+
+
+/* General responsive adjustments */
+@media (max-width: 992px) {
+  .nav-body {
+    flex-direction: column;
+    padding: 30px 15px;
+  }
+  .div-textt > div {
+    width: 100%;
+  }
+  .nav-workarea {
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .business-text {
+    position: static;
+    margin-top: 30px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .contents1 h2 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .contents1 p {
+    font-size: 16px;
+  }
+  .menu {
+    gap: 15px;
+  }
+  .services {
+    grid-template-columns: 1fr;
+    padding: 50px 20px;
+  }
+  .grid-container {
+    display: block;
+    width: 100%;
+    padding: 20px;
+  }
+  .slide-images img {
+    width: 100%;
+  }
+}
