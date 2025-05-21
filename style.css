@@ -1893,7 +1893,7 @@ transition: all .4s ease;
     left: 0;
     width: 100%;
     padding: 20px;
-    z-index: 999;
+    z-index: 998;
   }
 
   .nav-links.nav-open {
